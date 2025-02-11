@@ -6,4 +6,8 @@ services:
       context: https://github.com/brunobucci/ht-autenticador.git#dev
     container_name: ht-autenticador-api
     ports:
+<<<<<<< HEAD
       - "8080:8080"
+=======
+      - "8080:8080"
+>>>>>>> branch 'dev' of https://github.com/brunobucci/ht-autenticador.git

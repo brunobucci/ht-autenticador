@@ -22,4 +22,8 @@ COPY --from=build /app/target/ht-autenticador-*.jar app.jar
 EXPOSE 8080
 
 # Comando para rodar a aplicação
+<<<<<<< HEAD
 CMD ["java", "-jar", "app.jar"]
+=======
+CMD ["java", "-jar", "app.jar"]
+>>>>>>> branch 'dev' of https://github.com/brunobucci/ht-autenticador.git
