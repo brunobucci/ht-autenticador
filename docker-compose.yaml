@@ -7,3 +7,5 @@ services:
     container_name: ht-autenticador-api
     ports:
       - "8080:8080"
+
+

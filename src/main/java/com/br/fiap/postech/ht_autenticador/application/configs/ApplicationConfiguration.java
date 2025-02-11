@@ -1,4 +1,4 @@
-package com.br.fiap.postech.ht_autenticador.configs;
+package com.br.fiap.postech.ht_autenticador.application.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.br.fiap.postech.ht_autenticador.repository.UsuarioRepository;
+import com.br.fiap.postech.ht_autenticador.infra.database.UsuarioRepository;
 
 @Configuration
 public class ApplicationConfiguration {

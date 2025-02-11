@@ -19,11 +19,11 @@ import io.jsonwebtoken.security.Keys;
 @Service
 public class JwtService {
 
-	@Value("${security.jwt.secret-key}")
-    private String secretKey;
+	@Value("${security.jwt.secret-key}") 
+	String secretKey;
 
     @Value("${security.jwt.expiration-time}")
-    private long jwtExpiration;
+    long jwtExpiration;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -66,11 +66,11 @@ public class JwtService {
         return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
 
-    private boolean isTokenExpired(String token) {
+    boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
 
-    private Date extractExpiration(String token) {
+    Date extractExpiration(String token) {
         return extractClaim(token, Claims::getExpiration);
     }
 
