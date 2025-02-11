@@ -1,4 +1,4 @@
-package com.br.fiap.postech.ht_autenticador.dto;
+package com.br.fiap.postech.ht_autenticador.application.dto;
 
 import lombok.Getter;
 import lombok.Setter;

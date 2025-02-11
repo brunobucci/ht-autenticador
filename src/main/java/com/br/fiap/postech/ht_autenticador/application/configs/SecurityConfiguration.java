@@ -1,4 +1,4 @@
-package com.br.fiap.postech.ht_autenticador.configs;
+package com.br.fiap.postech.ht_autenticador.application.configs;
 
 import java.util.List;
 
